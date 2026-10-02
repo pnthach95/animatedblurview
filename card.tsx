@@ -10,8 +10,8 @@ import { withUniwind } from 'uniwind';
 type Props = React.PropsWithChildren<{
   className?: string;
   name?: MaterialDesignIconsIconName;
-  onPress: () => void;
-  style: StyleProp<AnimatedStyle<StyleProp<ViewStyle>>>;
+  onPress?: () => void;
+  style?: StyleProp<AnimatedStyle<StyleProp<ViewStyle>>>;
 }>;
 
 const CBlurView = withUniwind(BlurView);

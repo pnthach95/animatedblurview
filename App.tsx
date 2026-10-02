@@ -18,6 +18,7 @@ function App() {
 
   const rotateAni1 = useAnimatedStyle(() => {
     return {
+      display: rotate.value > 90 ? 'none' : 'flex',
       transform: [
         {
           rotateY: `${interpolate(rotate.value, [0, 90], [0, 90], 'clamp')}deg`,
@@ -28,6 +29,7 @@ function App() {
 
   const rotateAni2 = useAnimatedStyle(() => {
     return {
+      display: rotate.value < 90 ? 'none' : 'flex',
       transform: [
         {
           rotateY: `${interpolate(
@@ -44,7 +46,7 @@ function App() {
   return (
     <SafeAreaProvider>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <CSafeAreaView edges={['top', 'bottom']} className="p-3">
+      <CSafeAreaView edges={['top', 'bottom']} className="p-3 gap-10">
         <View className="h-52 w-full">
           <View className="absolute h-full w-full">
             <VCard

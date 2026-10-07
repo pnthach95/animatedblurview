@@ -29,9 +29,10 @@ const VCard = ({
       style={style}
     >
       <View className="absolute -top-115 size-150 self-center rounded-full bg-primary/60" />
+      {/* <View className="absolute -top-135 size-150 self-center rounded-full bg-teal-800" /> */}
       <CBlurView
         blurAmount={200}
-        blurType="light"
+        blurType="regular"
         className="absolute top-0 right-0 bottom-0 left-0"
       />
       {children}

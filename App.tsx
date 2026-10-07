@@ -50,6 +50,7 @@ function App() {
         <View className="h-52 w-full">
           <View className="absolute h-full w-full">
             <VCard
+              className="self-start"
               style={rotateAni1}
               onPress={() => {
                 rotate.set(withTiming(180, { duration: 1000 }));

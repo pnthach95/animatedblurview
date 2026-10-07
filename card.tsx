@@ -36,7 +36,7 @@ const VCard = ({
         className="absolute top-0 right-0 bottom-0 left-0"
       />
       {children}
-      <Pressable className={className} onPress={onPress}>
+      <Pressable testID='arrow-button' className={className} onPress={onPress}>
         <MaterialDesignIcons name={name} size={50} />
       </Pressable>
     </Animated.View>

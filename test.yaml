@@ -1,0 +1,11 @@
+appId: org.reactjs.native.example.animatedblurview
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Heading1"
+- tapOn:
+    id: "arrow-button"
+- assertVisible: "Heading4"
+- tapOn:
+    id: "arrow-button"
+- assertVisible: "Heading1"
